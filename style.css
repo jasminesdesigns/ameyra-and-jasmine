@@ -120,13 +120,17 @@ h2{font-size:clamp(24px,5vw,44px)}
   display:none;
 }
 .hero{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+
   background-image:url("Second%20page.PNG") !important;
   background-size:cover !important;
   background-position:center !important;
   background-repeat:no-repeat !important;
-}
 
-.hero-content{
-  position:relative !important;
-  z-index:10 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
 }
