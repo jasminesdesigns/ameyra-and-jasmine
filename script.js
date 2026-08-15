@@ -218,12 +218,12 @@ function previousPhoto() {
   showPhoto();
 }
 /* =========================
-   LAST PAGE FIREWORKS
+   FINAL PAGE FIREWORKS
    ========================= */
 
-const lastPage = document.querySelector('.screen[data-screen="5"]');
+const finalPage = document.querySelector('.screen[data-screen="6"]');
 
-if (lastPage) {
+if (finalPage) {
   const fireworkPositions = [
     [15, 25],
     [35, 18],
@@ -242,6 +242,6 @@ if (lastPage) {
     firework.style.top = position[1] + "%";
     firework.style.animationDelay = (i * 0.45) + "s";
 
-    lastPage.appendChild(firework);
+    finalPage.appendChild(firework);
   });
 }
