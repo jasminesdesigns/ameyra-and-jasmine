@@ -272,3 +272,94 @@ h2{font-size:clamp(24px,5vw,44px)}
     font-size: 30px;
   }
 }
+/* =========================
+   MINECRAFT-STYLE FIREWORKS
+   LAST PAGE ONLY
+   ========================= */
+
+.screen[data-screen="5"] {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 20%, #17204a 0%, #090d24 45%, #030512 100%);
+}
+
+.screen[data-screen="5"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.7;
+  background-image:
+    radial-gradient(circle, white 1px, transparent 1px),
+    radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 70px 70px, 110px 110px;
+  background-position: 10px 20px, 50px 80px;
+}
+
+.screen[data-screen="5"] .panel {
+  position: relative;
+  z-index: 10;
+}
+
+/* Firework bursts */
+
+.firework {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 1;
+  animation: fireworkBurst 2.8s steps(1) infinite;
+}
+
+.firework::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  box-shadow:
+    0 -28px #ff4fa3,
+    0 -20px #ff4fa3,
+    0 -12px #ff4fa3,
+    0 12px #ff4fa3,
+    0 20px #ff4fa3,
+    0 28px #ff4fa3,
+    -28px 0 #ff4fa3,
+    -20px 0 #ff4fa3,
+    -12px 0 #ff4fa3,
+    12px 0 #ff4fa3,
+    20px 0 #ff4fa3,
+    28px 0 #ff4fa3,
+    -20px -20px #ff4fa3,
+    -12px -12px #ff4fa3,
+    12px 12px #ff4fa3,
+    20px 20px #ff4fa3,
+    -20px 20px #ff4fa3,
+    -12px 12px #ff4fa3,
+    12px -12px #ff4fa3,
+    20px -20px #ff4fa3;
+}
+
+@keyframes fireworkBurst {
+  0%, 55% {
+    transform: scale(0.15);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
