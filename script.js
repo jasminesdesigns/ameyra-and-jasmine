@@ -42,7 +42,7 @@ const reasons = [
     text: "You always get up to get something for me or grab something for me, even when you're tired or sleepy."
   },
   {
-    title: "My favorite everyday moments",
+    title: "TIME TO BRAWL",
     text: "I love that we have the same interests and always find a way to make everyday count, even if it's just getting dinner and playing Brawl Stars."
   },
   {
@@ -51,10 +51,10 @@ const reasons = [
   },
   {
     title: "You're a 1/1",
-    text: "I love how unique you are because I swear you're a 1/1. I've never met anyone that's similar to you BESIDES ME 😭 I love your ADHD brain."
+    text: "I love how unique you are because nobody is like my bubba. I've never met anyone that's similar to you BESIDES ME 😭 I love your ADHD brain."
   },
   {
-    title: "My talented girlfriend",
+    title: "YOUR TALENTS",
     text: "I love how talented you are in everything that you attempt. Like deadass, what are you NOT good at? 😭 I love my talented gf. It's such a flex."
   },
   {
