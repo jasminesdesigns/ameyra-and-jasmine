@@ -61,9 +61,10 @@ h2{font-size:clamp(24px,5vw,44px)}
 .answers button:hover{background:#4e485d}
 .result{min-height:30px;font-size:28px}
 .hidden{display:none}
-.finale{align-items:center;justify-content:center;background:
- radial-gradient(circle at 50% 30%,#f4b3c8 0 10%,transparent 11%),
- linear-gradient(#7e6b9d 0 45%,#3d6237 45% 100%)}
+.finale{
+  align-items:center;
+  justify-content:center;
+}
 .final-card{max-width:800px;background:rgba(17,15,24,.92)}
 .heart-big{font-size:90px;color:#ff86b7;text-shadow:8px 8px #111;animation:pulse 1.3s infinite}
 @keyframes pulse{50%{transform:scale(1.1)}}
