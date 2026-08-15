@@ -277,7 +277,7 @@ h2{font-size:clamp(24px,5vw,44px)}
    FINAL PAGE ONLY
    ========================= */
 
-.screen[data-screen="6"] {
+.screen[data-screen="7"] {
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -287,7 +287,7 @@ h2{font-size:clamp(24px,5vw,44px)}
     radial-gradient(circle at 50% 20%, #17204a 0%, #090d24 45%, #030512 100%);
 }
 
-.screen[data-screen="6"]::before {
+.screen[data-screen="7"]::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -300,7 +300,7 @@ h2{font-size:clamp(24px,5vw,44px)}
   background-position: 10px 20px, 50px 80px;
 }
 
-.screen[data-screen="6"] .final-card {
+.screen[data-screen="7"] .final-card {
   position: relative;
   z-index: 10;
 }
