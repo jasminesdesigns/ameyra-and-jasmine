@@ -363,3 +363,74 @@ h2{font-size:clamp(24px,5vw,44px)}
     opacity: 0;
   }
 }
+/* =========================
+   FINAL DESKTOP POLISH
+   DOES NOT AFFECT PHONES
+   ========================= */
+
+@media (min-width: 900px) {
+
+  /* Make the main content use more of the computer screen */
+  .panel,
+  .final-card {
+    width: min(1100px, 88vw);
+  }
+
+  /* Make normal page writing easier to read */
+  .panel p {
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  /* Make the big headings comfortable on desktop */
+  .panel h2 {
+    font-size: 42px;
+  }
+
+  /* Flowers and floating hearts */
+  .flower {
+    font-size: 48px;
+  }
+
+  .heart {
+    font-size: 46px;
+  }
+
+  /* Timeline text */
+  .timeline p {
+    font-size: 32px;
+  }
+
+  /* Quiz answers */
+  .answers button {
+    font-size: 25px;
+    padding: 18px;
+  }
+
+  /* Reason popup */
+  .reason-card {
+    width: min(800px, 80vw);
+  }
+
+  .reason-card p {
+    font-size: 32px;
+  }
+
+  /* Photo album */
+  .album-viewer {
+    width: min(750px, 70vw);
+    margin: 25px auto;
+  }
+
+  #albumImage {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .album-controls {
+    margin-top: 20px;
+  }
+}
