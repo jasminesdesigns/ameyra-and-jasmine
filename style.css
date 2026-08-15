@@ -173,3 +173,35 @@ h2{font-size:clamp(24px,5vw,44px)}
   font-size:30px;
   cursor:pointer;
 }
+/* DESKTOP SIZE FIX */
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .panel,
+  .final-card {
+    padding: 35px;
+  }
+
+  .book {
+    font-size: 23px;
+    padding: 25px;
+  }
+
+  .lead {
+    font-size: 23px;
+  }
+}
