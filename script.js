@@ -175,3 +175,45 @@ function showSecret(){
 /* Start */
 
 go(0);
+/* =========================
+   PHOTO ALBUM
+   ========================= */
+
+let currentPhoto = 1;
+
+const albumPhotos = [
+  "Pic%201.PNG",
+  "Pic%202.PNG",
+  "Pic3.PNG"
+];
+
+function showPhoto() {
+  document.getElementById("albumImage").src =
+    albumPhotos[currentPhoto - 1];
+
+  document.getElementById("albumImage").alt =
+    "Memory " + currentPhoto;
+
+  document.getElementById("albumCounter").textContent =
+    currentPhoto + " / " + albumPhotos.length + " ❤️";
+}
+
+function nextPhoto() {
+  currentPhoto++;
+
+  if (currentPhoto > albumPhotos.length) {
+    currentPhoto = 1;
+  }
+
+  showPhoto();
+}
+
+function previousPhoto() {
+  currentPhoto--;
+
+  if (currentPhoto < 1) {
+    currentPhoto = albumPhotos.length;
+  }
+
+  showPhoto();
+}
