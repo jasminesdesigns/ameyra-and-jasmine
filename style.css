@@ -119,20 +119,3 @@ h2{font-size:clamp(24px,5vw,44px)}
 #website.hidden{
   display:none;
 }
-.hero-content{
-  position:absolute !important;
-  z-index:999 !important;
-  top:50% !important;
-  left:50% !important;
-  transform:translate(-50%,-50%) !important;
-  width:90% !important;
-  text-align:center !important;
-}
-
-.second-page-image{
-  z-index:0 !important;
-}
-
-.hero{
-  position:relative !important;
-}
