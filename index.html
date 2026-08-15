@@ -47,17 +47,33 @@
         </div>
       </section>
 
-      <section class="screen meadow" data-screen="2">
-        <div class="top-copy">
-          <div class="chapter">OUR MEMORIES</div>
-          <h2>Collect the hearts</h2>
-          <p>There are <b id="remaining">8</b> little memories hidden around our world.</p>
-        </div>
-        <div class="field" id="field"></div>
-        <div class="bottom">
-          <button class="mc-btn" onclick="go(3)">I FOUND THEM ALL →</button>
-        </div>
-      </section>
+    <section class="screen meadow" data-screen="2">
+
+  <div class="top-copy">
+    <div class="chapter">8 THINGS I LOVE ABOUT YOU</div>
+    <h2>Find the hearts ❤️</h2>
+    <p><b id="remaining">8</b> things I love about you are hidden around our world.</p>
+  </div>
+
+  <div class="field" id="field"></div>
+
+  <div id="reasonPopup" class="reason-popup hidden">
+    <div class="reason-card">
+      <button class="close-reason" onclick="closeReason()">×</button>
+
+      <div id="reasonNumber" class="reason-number"></div>
+      <h3 id="reasonTitle"></h3>
+      <p id="reasonText"></p>
+
+      <button class="mc-btn" onclick="closeReason()">KEEP LOOKING ❤️</button>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <button class="mc-btn" onclick="go(3)">I FOUND THEM ALL →</button>
+  </div>
+
+</section>
 
       <section class="screen photos" data-screen="3">
         <div class="panel wide">
