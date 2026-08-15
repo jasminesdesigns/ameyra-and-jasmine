@@ -46,7 +46,7 @@ const reasons = [
     text: "I love that we have the same interests and always find a way to make everyday count, even if it's just getting dinner and playing Brawl Stars."
   },
   {
-    title: "Everything about you",
+    title: "your BIG ass and pretty face jkbutnotjk",
     text: "I love all of your physical characteristics. I love your body and your face and your eyes, and I love how warm you always are and how good you always smell."
   },
   {
