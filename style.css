@@ -211,3 +211,64 @@ h2{font-size:clamp(24px,5vw,44px)}
     background: #000;
   }
 }
+/* DESKTOP TEXT + HEART SIZE */
+@media (min-width: 900px) {
+
+  body {
+    font-size: 26px;
+  }
+
+  .pixel-kicker,
+  .chapter {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .tiny {
+    font-size: 20px;
+  }
+
+  .lead {
+    font-size: 32px;
+  }
+
+  .book {
+    font-size: 32px;
+  }
+
+  .mc-btn {
+    font-size: 13px;
+    padding: 17px 22px;
+  }
+
+  .top-copy p {
+    font-size: 28px;
+  }
+
+  .heart {
+    font-size: 42px;
+  }
+
+  .flower {
+    font-size: 45px;
+  }
+
+  .timeline p {
+    font-size: 30px;
+  }
+
+  .reason-card p {
+    font-size: 30px;
+  }
+}
