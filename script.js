@@ -149,8 +149,8 @@ function answer(correct){
   const r = document.getElementById("quizResult");
 
   r.textContent = correct
-    ? "CORRECT! You really know me 😭❤️"
-    : "Nooo 😭 try again!";
+    ? "CORRECT! GOOD JOB BUBBA😁😁"
+    : "Nooo 😭 BUBBA WHAT THA ELL!";
 
   if(correct){
     document
