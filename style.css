@@ -85,65 +85,16 @@ h2{font-size:clamp(24px,5vw,44px)}
   display:block;
 }
 
-.cover-overlay{
+.cover-heart-link{
   position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:25px;
-  background:rgba(0,0,0,.25);
-}
-
-.cover-overlay h1{
-  font-family:var(--pixel);
-  font-size:clamp(28px,7vw,60px);
-  color:#fff;
-  margin:0 0 35px;
-  text-shadow:5px 5px #111;
-}
-
-.cover-overlay p{
-  font-size:28px;
-  color:#fff;
-  text-shadow:3px 3px #111;
-  margin-top:30px;
-}
-
-.heart-button{
-  position:relative;
-  width:150px;
-  height:135px;
+  left:25%;
+  right:25%;
+  bottom:5%;
+  height:25%;
+  background:transparent;
   border:0;
-  background:none;
-  color:#ff719f;
-  font-size:115px;
-  line-height:1;
-  text-shadow:7px 7px #111;
-  transition:transform .2s ease;
-}
-
-.heart-button:hover{
-  transform:scale(1.08);
-}
-
-.heart-button:active{
-  transform:scale(.95);
-}
-
-.heart-button span{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  width:100%;
-  color:#fff;
-  font-family:var(--pixel);
-  font-size:10px;
-  line-height:1.5;
-  text-shadow:3px 3px #111;
+  cursor:pointer;
+  z-index:101;
 }
 
 #cover.hidden{
