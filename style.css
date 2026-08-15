@@ -86,15 +86,15 @@ h2{font-size:clamp(24px,5vw,44px)}
 }
 
 .cover-heart-link{
-  position:absolute;
-  left:10%;
-  right:10%;
-  bottom:0;
-  height:40%;
-  background:transparent;
+  position:fixed;
+  left:25%;
+  width:50%;
+  top:48%;
+  height:22%;
+  background:rgba(255,0,0,0.05);
   border:0;
+  z-index:9999;
   cursor:pointer;
-  z-index:101;
 }
 
 #cover.hidden{
