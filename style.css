@@ -274,22 +274,25 @@ h2{font-size:clamp(24px,5vw,44px)}
 }
 /* =========================
    MINECRAFT-STYLE FIREWORKS
-   LAST PAGE ONLY
+   FINAL PAGE ONLY
    ========================= */
 
-.screen[data-screen="5"] {
-  position: relative;
+.screen[data-screen="6"] {
+  position: absolute;
+  inset: 0;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
   background:
     radial-gradient(circle at 50% 20%, #17204a 0%, #090d24 45%, #030512 100%);
 }
 
-.screen[data-screen="5"]::before {
+.screen[data-screen="6"]::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.7;
+  opacity: .7;
   background-image:
     radial-gradient(circle, white 1px, transparent 1px),
     radial-gradient(circle, white 1px, transparent 1px);
@@ -297,18 +300,15 @@ h2{font-size:clamp(24px,5vw,44px)}
   background-position: 10px 20px, 50px 80px;
 }
 
-.screen[data-screen="5"] .panel {
+.screen[data-screen="6"] .final-card {
   position: relative;
   z-index: 10;
 }
-
-/* Firework bursts */
 
 .firework {
   position: absolute;
   width: 4px;
   height: 4px;
-  border-radius: 0;
   pointer-events: none;
   z-index: 1;
   animation: fireworkBurst 2.8s steps(1) infinite;
@@ -344,12 +344,12 @@ h2{font-size:clamp(24px,5vw,44px)}
 
 @keyframes fireworkBurst {
   0%, 55% {
-    transform: scale(0.15);
+    transform: scale(.15);
     opacity: 0;
   }
 
   60% {
-    transform: scale(0.5);
+    transform: scale(.5);
     opacity: 1;
   }
 
