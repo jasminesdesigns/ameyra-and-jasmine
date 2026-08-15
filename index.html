@@ -75,17 +75,25 @@
 
 </section>
 
-      <section class="screen photos" data-screen="3">
-        <div class="panel wide">
-          <div class="chapter">OUR PHOTO ALBUM</div>
-          <h2>Ameyra + Jasmine ♡</h2>
-          <p class="lead">Your photos can be added yourself — no coding needed.</p>
-          <p>Put your pictures inside the <b>photos</b> folder, then rename them <b>photo1.jpg</b>, <b>photo2.jpg</b>, <b>photo3.jpg</b> and so on.</p>
-          <div class="photo-grid" id="photoGrid"></div>
-          <p class="tiny">You can add as many photos as you want. JPG, PNG and WEBP all work.</p>
-          <button class="mc-btn" onclick="go(4)">NEXT →</button>
-        </div>
-      </section>
+    <section class="screen photos" data-screen="3">
+  <div class="panel wide">
+    <div class="chapter">OUR PHOTO ALBUM</div>
+    <h2>Ameyra + Jasmine ♡</h2>
+    <p class="lead">A few of my favorite memories with you ♡</p>
+
+    <div class="album-viewer">
+      <img id="albumImage" src="Pic%201.PNG" alt="Memory 1">
+
+      <div class="album-controls">
+        <button class="mc-btn" onclick="previousPhoto()">← BACK</button>
+        <span id="albumCounter">1 / 3 ❤️</span>
+        <button class="mc-btn" onclick="nextPhoto()">NEXT →</button>
+      </div>
+    </div>
+
+    <button class="mc-btn" onclick="go(4)">NEXT →</button>
+  </div>
+</section>
 
       <section class="screen" data-screen="4">
         <div class="panel">
