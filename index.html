@@ -126,10 +126,16 @@
 
   <script>
     function openWorld() {
-      document.getElementById("cover").classList.add("hidden");
-      document.getElementById("website").classList.remove("hidden");
-      window.scrollTo(0, 0);
-    }
+  document.getElementById("cover").classList.add("hidden");
+  document.getElementById("website").classList.remove("hidden");
+
+  const music = document.getElementById("backgroundMusic");
+  music.play().catch(error => {
+    console.log("Music could not start:", error);
+  });
+
+  window.scrollTo(0, 0);
+}
 
     const photoGrid = document.getElementById("photoGrid");
 
@@ -151,4 +157,7 @@
 
   <script src="script.js"></script>
 </body>
+<audio id="backgroundMusic" loop>
+  <source src="Mp3.mp3" type="audio/mpeg">
+</audio>
 </html>
