@@ -12,16 +12,8 @@
   <div id="cover">
     <img src="anniversary-cover.jpeg" alt="2 Year Anniversary">
 
-    <div class="cover-overlay">
-      <h1>2 YEAR ANNIVERSARY</h1>
-
-      <button class="heart-button" onclick="openWorld()">
-        ♥
-        <span>CLICK ME</span>
-      </button>
-
-      <p>Ameyra + Jasmine ♡</p>
-    </div>
+    <!-- Invisible button over the heart near the bottom -->
+    <button class="cover-heart-link" onclick="openWorld()" aria-label="Open our world"></button>
   </div>
 
   <div id="website" class="hidden">
@@ -46,11 +38,9 @@
           <div class="chapter">CHAPTER I</div>
           <h2>How it all started</h2>
           <p class="lead">Replace this with the story of how you two met.</p>
-
           <div class="book">
             <p>“The best part of my life is that somehow, out of all the people in the world, I found you.”</p>
           </div>
-
           <button class="mc-btn" onclick="go(2)">NEXT →</button>
         </div>
       </section>
@@ -61,9 +51,7 @@
           <h2>Collect the hearts</h2>
           <p>There are <b id="remaining">8</b> little memories hidden around our world.</p>
         </div>
-
         <div class="field" id="field"></div>
-
         <div class="bottom">
           <button class="mc-btn" onclick="go(3)">I FOUND THEM ALL →</button>
         </div>
@@ -73,21 +61,10 @@
         <div class="panel wide">
           <div class="chapter">OUR PHOTO ALBUM</div>
           <h2>Ameyra + Jasmine ♡</h2>
-
           <p class="lead">Your photos can be added yourself — no coding needed.</p>
-
-          <p>
-            Put your pictures inside the <b>photos</b> folder,
-            then rename them <b>photo1.jpg</b>, <b>photo2.jpg</b>,
-            <b>photo3.jpg</b> and so on.
-          </p>
-
+          <p>Put your pictures inside the <b>photos</b> folder, then rename them <b>photo1.jpg</b>, <b>photo2.jpg</b>, <b>photo3.jpg</b> and so on.</p>
           <div class="photo-grid" id="photoGrid"></div>
-
-          <p class="tiny">
-            You can add as many photos as you want. JPG, PNG and WEBP all work.
-          </p>
-
+          <p class="tiny">You can add as many photos as you want. JPG, PNG and WEBP all work.</p>
           <button class="mc-btn" onclick="go(4)">NEXT →</button>
         </div>
       </section>
@@ -96,14 +73,12 @@
         <div class="panel">
           <div class="chapter">CHAPTER II</div>
           <h2>Our little timeline</h2>
-
           <div class="timeline">
             <div><span>MM/DD/YYYY</span><p>We met ♡</p></div>
             <div><span>MM/DD/YYYY</span><p>Our first date</p></div>
             <div><span>MM/DD/YYYY</span><p>A memory I'll never forget</p></div>
             <div><span>MM/DD/YYYY</span><p>Today — still choosing you</p></div>
           </div>
-
           <button class="mc-btn" onclick="go(5)">NEXT →</button>
         </div>
       </section>
@@ -112,49 +87,29 @@
         <div class="panel">
           <div class="chapter">BONUS LEVEL</div>
           <h2>How well do you know me?</h2>
-
           <p id="question">What is my favorite month?</p>
-
           <div class="answers">
             <button onclick="answer(false)">December</button>
             <button onclick="answer(true)">July</button>
             <button onclick="answer(false)">March</button>
             <button onclick="answer(false)">September</button>
           </div>
-
           <p id="quizResult" class="result"></p>
-
-          <button class="mc-btn hidden" id="quizNext" onclick="go(6)">
-            FINAL LEVEL →
-          </button>
+          <button class="mc-btn hidden" id="quizNext" onclick="go(6)">FINAL LEVEL →</button>
         </div>
       </section>
 
       <section class="screen finale" data-screen="6">
         <div class="final-card">
           <div class="chapter">ACHIEVEMENT UNLOCKED</div>
-
           <div class="heart-big">♥</div>
-
           <h2>YOU ARE MY FAVORITE PERSON</h2>
-
-          <p>
-            Thank you for being my home, my best friend,
-            and my favorite part of every day.
-          </p>
-
+          <p>Thank you for being my home, my best friend, and my favorite part of every day.</p>
           <p class="signature">— your person ♡</p>
-
-          <button class="mc-btn" onclick="showSecret()">
-            OPEN YOUR GIFT 🎁
-          </button>
-
+          <button class="mc-btn" onclick="showSecret()">OPEN YOUR GIFT 🎁</button>
           <div id="secret" class="secret hidden">
             <h3>YOUR REAL-LIFE SURPRISE</h3>
-            <p>
-              Put the actual surprise here — dinner, flowers, a trip,
-              a letter, a tattoo reveal, whatever you want.
-            </p>
+            <p>Put the actual surprise here — dinner, flowers, a trip, a letter, a tattoo reveal, whatever you want.</p>
           </div>
         </div>
       </section>
@@ -170,11 +125,9 @@
   </div>
 
   <script>
-
     function openWorld() {
       document.getElementById("cover").classList.add("hidden");
       document.getElementById("website").classList.remove("hidden");
-
       window.scrollTo(0, 0);
     }
 
@@ -182,26 +135,20 @@
 
     if (photoGrid) {
       for (let i = 1; i <= 50; i++) {
-
         const img = new Image();
-
         img.src = "photos/photo" + i + ".jpg";
         img.alt = "Memory " + i;
 
         img.onload = () => {
           const card = document.createElement("div");
           card.className = "photo-card";
-
           card.appendChild(img);
           photoGrid.appendChild(card);
         };
-
       }
     }
-
   </script>
 
   <script src="script.js"></script>
-
 </body>
 </html>
