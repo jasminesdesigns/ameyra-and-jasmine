@@ -119,3 +119,14 @@ h2{font-size:clamp(24px,5vw,44px)}
 #website.hidden{
   display:none;
 }
+.hero{
+  background-image:url("Second%20page.PNG") !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+
+.hero-content{
+  position:relative !important;
+  z-index:10 !important;
+}
