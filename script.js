@@ -217,3 +217,31 @@ function previousPhoto() {
 
   showPhoto();
 }
+/* =========================
+   LAST PAGE FIREWORKS
+   ========================= */
+
+const lastPage = document.querySelector('.screen[data-screen="5"]');
+
+if (lastPage) {
+  const fireworkPositions = [
+    [15, 25],
+    [35, 18],
+    [55, 30],
+    [78, 20],
+    [88, 45],
+    [25, 55],
+    [65, 60]
+  ];
+
+  fireworkPositions.forEach((position, i) => {
+    const firework = document.createElement("div");
+
+    firework.className = "firework";
+    firework.style.left = position[0] + "%";
+    firework.style.top = position[1] + "%";
+    firework.style.animationDelay = (i * 0.45) + "s";
+
+    lastPage.appendChild(firework);
+  });
+}
